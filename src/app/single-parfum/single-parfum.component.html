@@ -1,0 +1,17 @@
+<div *ngIf="product">
+
+  <ng-container *ngIf="!editing">
+
+    <h1>{{product.label}}</h1>
+
+    <p>Description: {{product.description}}</p>
+    <img src="{{product.picture}}">
+    <p>Le Prix: {{product.basePrice}} </p>
+    <br>
+    <button (click)="editing = true" class="btn btn-warning">Edit</button>
+
+  </ng-container>
+</div>
+<div *ngIf="!product">
+  Loading...
+</div>
