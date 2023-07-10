@@ -8,6 +8,8 @@
     <img src="{{product.picture}}">
     <p>Le Prix: {{product.basePrice}} </p>
     <br>
+    <app-options [options]="options"  />
+    <p><button>Add to cart</button></p>
     <button (click)="editing = true" class="btn btn-warning">Edit</button>
 
   </ng-container>

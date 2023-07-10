@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Product } from './entities';
+import { Options, Product } from './entities';
 
 
 
@@ -30,6 +30,9 @@ export class ParfumService {
   update(product: Product) {
     return this.http.patch<Product>('http://localhost:8000/api/product/' + product.id, product)
 
+  }
+  findByProduct(id: any){
+    return this.http.get<Options[]>('http://localhost:8000/api/options/product/' + id)
   }
 
 }

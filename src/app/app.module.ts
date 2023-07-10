@@ -8,13 +8,17 @@ import { ListParfumComponent } from './list-parfum/list-parfum.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { SingleParfumComponent } from './single-parfum/single-parfum.component';
+import { ListMagasinsComponent } from './list-magasins/list-magasins.component';
+import { OptionsComponent } from './options/options.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ListParfumComponent,
-    SingleParfumComponent
+    SingleParfumComponent,
+    ListMagasinsComponent,
+    OptionsComponent
   ],
   imports: [
     BrowserModule,
